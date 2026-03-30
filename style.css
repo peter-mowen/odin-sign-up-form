@@ -1,6 +1,32 @@
 body {
   display: flex;
-  flex-direction: column;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.image-sidebar-container {
+  flex: 1;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  background-image: url('img/ferns.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 98vh;
+  width: 100%;
+}
+
+.background-image-credit {
+  align-self: flex-end;
+  color: white;
+}
+
+.background-image-credit a {
+  color: inherit;
+}
+
+.main-content-container {
+  flex: 2;
 }
