@@ -1,5 +1,6 @@
 :root {
   --main-section-margin: 40px;
+  --field-border-width: 2px;
 }
 
 @font-face {
@@ -115,6 +116,28 @@ p {
   letter-spacing: 0.1rem;
   font-size: 0.6rem;
   font-weight: bold;
+}
+
+.form-field input {
+  border-radius: 4px;
+  border: var(--field-border-width) solid #E5E7EB;
+  padding: 0.25rem;
+}
+
+.form-field input:focus {
+  border: var(--field-border-width) solid blue;
+}
+
+.form-field input:invalid {
+  border: var(--field-border-width) solid red;
+}
+
+.error-message {
+  display: none;
+}
+
+input:focus:invalid + .error-message {
+  display: block;
 }
 
 .sign-up-form h2 {

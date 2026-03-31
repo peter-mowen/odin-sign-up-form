@@ -61,11 +61,26 @@
           <div class="form-row">
             <div class="form-field">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password">
+              <input type="password"
+                     name="password"
+                     id="password"
+                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,32}$"
+                     required>
+              <ul class="error-message">
+                <li>8-32 characters</li>
+                <li>one uppercase letter</li>
+                <li>one lowercase letter</li>
+                <li>one number</li>
+                <li>one symbol</li>
+              </ul>
             </div>
             <div class="form-field">
               <label for="confirm-password">Confirm Password</label>
-              <input type="confirm-password" name="confirm-password" id="confirm-password">
+              <input type="password"
+                     name="confirm-password"
+                     id="confirm-password"
+                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,32}$"
+                     required>
             </div>
           </div>
         </section>
