@@ -74,3 +74,38 @@ p {
 .main-content-container {
   flex: 2;
 }
+
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.form-row {
+  display: flex;
+}
+
+.sign-up-form h2 {
+  margin: 0px 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px;
+}
+
+.sign-up-form button {
+  margin: 0px 20px;
+}
+
+.footer {
+  height: 100%;
+}
