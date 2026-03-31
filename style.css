@@ -94,7 +94,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 100%;
+  flex-grow: 1;
 }
 
 .header p {
@@ -132,7 +132,7 @@ p {
   box-shadow: gray 2px 3px 0.5em -0.25em;
 }
 
-.form-field input:invalid {
+.form-field input:user-invalid {
   border: var(--field-border-width) solid red;
 }
 
@@ -167,6 +167,6 @@ input:focus:invalid + .error-message {
 }
 
 .footer {
-  height: 100%;
+  flex-grow: 1;
   margin: 0px 0px 0px var(--main-section-margin);
 }
