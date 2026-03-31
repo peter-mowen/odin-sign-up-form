@@ -79,9 +79,6 @@ p {
 
 .main-content-container {
   flex: 2;
-}
-
-.main-content-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
