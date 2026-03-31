@@ -1,3 +1,7 @@
+:root {
+  --main-section-margin: 40px;
+}
+
 @font-face {
     font-family: 'Norse';
     src: url('fonts/Norse-Bold.woff2') format('woff2'),
@@ -92,6 +96,12 @@ p {
   height: 100%;
 }
 
+.header p {
+  margin: 0px 0px 40px var(--main-section-margin);
+  font-size: x-large;
+  font-weight: normal;
+}
+
 .form-row {
   display: flex;
 }
@@ -99,11 +109,11 @@ p {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin: 5px 20px;
+  margin: 5px var(--main-section-margin);
 }
 
 .sign-up-form h2 {
-  margin: 0px 20px;
+  margin: 0px var(--main-section-margin);
 }
 
 .sign-up-form section {
@@ -112,7 +122,7 @@ p {
 }
 
 .sign-up-form button {
-  margin: 30px 20px;
+  margin: 30px var(--main-section-margin);
   background-color: #596D48;
   color: white;
   font-size: 1em;
@@ -124,4 +134,5 @@ p {
 
 .footer {
   height: 100%;
+  margin: 0px 0px 0px var(--main-section-margin);
 }
