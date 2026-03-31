@@ -98,7 +98,7 @@ p {
   margin: 0px 0px 40px var(--main-section-margin);
   font-size: x-large;
   font-weight: normal;
-  width: clamp(30ch, 60%, 53ch);
+  width: clamp(30ch, 80%, 53ch);
 }
 
 .form-row {
