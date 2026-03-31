@@ -129,6 +129,7 @@ p {
 
 .form-field input:focus {
   border: var(--field-border-width) solid blue;
+  box-shadow: gray 2px 3px 0.5em -0.25em;
 }
 
 .form-field input:invalid {
