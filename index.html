@@ -64,15 +64,8 @@
               <input type="password"
                      name="password"
                      id="password"
-                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,32}$"
+                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$"
                      required>
-              <ul class="error-message">
-                <li>8-32 characters</li>
-                <li>one uppercase letter</li>
-                <li>one lowercase letter</li>
-                <li>one number</li>
-                <li>one symbol</li>
-              </ul>
             </div>
             <div class="form-field">
               <label for="confirm-password">Confirm Password</label>
@@ -82,6 +75,9 @@
                      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,32}$"
                      required>
             </div>
+            <span class="error-message">
+              At least 8 characters, 1 lowercase letter, 1 uppercase letter, 1 number, and 1 symbol
+            </span>
           </div>
         </section>
         <button>Create Account</button>

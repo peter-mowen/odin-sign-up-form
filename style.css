@@ -112,6 +112,7 @@ p {
   display: flex;
   flex-direction: column;
   margin: 5px var(--main-section-margin);
+  position: relative;
 }
 
 .form-field label {
@@ -138,10 +139,12 @@ p {
 
 .error-message {
   display: none;
+  position: absolute;
+  bottom: -25px;
 }
 
 input:focus:invalid + .error-message {
-  display: block;
+  display: revert;
 }
 
 .sign-up-form h2 {
